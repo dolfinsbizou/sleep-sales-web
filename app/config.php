@@ -11,13 +11,13 @@ Astaroth::set(array(
         ),
         'Flash',
         'Db' => array(
-            'dsn' => 'mysql:dbname=test;host=127.0.0.1',
+            'dsn' => 'mysql:dbname=bdemontreal;host=127.0.0.1',
             'username' => 'root',
-            'passwd' => '',
+            'passwd' => '123',
             'debug' => false
         ),
         'UserManager' => [
-            'class_user' => \App\Db\MemberDb::class,
+            'class_user' => \App\Db\UserDb::class,
             'attr_username' => 'username',
             'attr_passwd' => 'password'
         ],
@@ -34,5 +34,7 @@ Astaroth::set(array(
 ));
 
 Astaroth::set('app.routes', [
-
+    'index' => [
+        'action' => 'Page/index'
+    ]
 ]);

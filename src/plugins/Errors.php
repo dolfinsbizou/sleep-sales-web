@@ -96,7 +96,7 @@ class Errors implements iPlugin
             header('Location: ', false, $e->getCode());
             if ($e->getCode() === 404) {
                 if(self::$config['404_redirect'])
-                    return Astaroth::redirect(Astaroth::url(self::$config['404_redirect']));
+                    //return Astaroth::redirect(Astaroth::url(self::$config['404_redirect']));
                 header('Content-type: text/html');
                 if ($output = Astaroth::render(self::$config['404_view'])) {
                     echo $output;
