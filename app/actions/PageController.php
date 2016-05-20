@@ -12,5 +12,24 @@ class PageController extends \AppController{
         return [];
     }
 
+    public function soiree($id){
+        
+    }
 
+    public function nouveaucompte(){
+        
+    }
+    
+    public function connection(){
+        
+    }
+    
+    public function deconnection(){
+        
+    }
+    
+    public function e404(){
+    
+    }
+    
 }

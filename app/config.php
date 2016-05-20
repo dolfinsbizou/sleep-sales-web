@@ -7,7 +7,7 @@ Astaroth::set(array(
         'Session',
         'Errors' => array(
             'catch_errors' => true,
-            '404_redirect' => 'pages/error404'
+            '404_redirect' => 'page/e404'
         ),
         'Flash',
         'Db' => array(
