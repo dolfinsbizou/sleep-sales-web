@@ -1,4 +1,6 @@
 <?php
+use App\Db\SoireeDb;
+
 /**
  * Created by PhpStorm.
  * User: Emmanuel
@@ -9,7 +11,9 @@
 class PageController extends \AppController{
 
     public function index(){
-        return [];
+        $soireeDb = new SoireeDb();
+        debug($soireeDb->LGet()[0]->Nom);
+        return ['soiree' => $soireeDb->LGet()];
     }
 
     public function soiree($id){
