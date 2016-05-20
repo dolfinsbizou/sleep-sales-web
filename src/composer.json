@@ -1,0 +1,23 @@
+{
+  "name": "vendor_name/package_name",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "POTTIAU Victorien",
+      "email": "victorien.pottiau@gmail.com"
+    },
+    {
+      "name" : "Emmanuel LEROUX",
+      "email" : "leroux.emmanuel@outlook.com"
+    }
+  ],
+  "require": {
+    "psr/log": "1.0.0",
+    "maximebf/consolekit": "1.0.3",
+    "maximebf/debugbar": "1.10.1",
+    "kriswallsmith/assetic": "v1.3.2",
+    "phpmailer/phpmailer": "v5.2.14"
+  }
+}
