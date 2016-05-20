@@ -15,6 +15,10 @@ class UserDb extends DbClass
 
     protected function base()
     {
-        
+        $this->setTableName('members');
+        $this->add('id', 'int', 0);
+        $this->add('username', 'string', null);
+        $this->add('password', 'string', null);
+        $this->setPrimaryKey('id');
     }
 }
