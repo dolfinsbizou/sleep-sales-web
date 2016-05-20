@@ -7,15 +7,16 @@
  */
 namespace App\Db;
 use Astaroth\DbClass;
-class UserDb extends DbClass
+class PropositionDb extends DbClass
 {
     protected function base()
     {
-        $this->setTableName('users');
+        $this->setTableName('proposition');
         $this->add('ID', 'int', 0);
-        $this->add('Identifiant', 'string', null);
-        $this->add('Mdp', 'string', null);
-		$this->add('Admin', 'boolean', false);
+        $this->add('Date', 'datetime', null);
+        $this->add('Descriptif', 'string', null);
+		$this->add('NbVote', 'int', 0);
+	
         $this->setPrimaryKey('ID');
     }
 }

@@ -7,15 +7,14 @@
  */
 namespace App\Db;
 use Astaroth\DbClass;
-class UserDb extends DbClass
+class EtapeDb extends DbClass
 {
     protected function base()
     {
-        $this->setTableName('users');
+        $this->setTableName('etape');
         $this->add('ID', 'int', 0);
-        $this->add('Identifiant', 'string', null);
-        $this->add('Mdp', 'string', null);
-		$this->add('Admin', 'boolean', false);
+        $this->add('HeureDeb', 'time', null);
+        $this->add('HeureFin', 'time', null);
         $this->setPrimaryKey('ID');
     }
 }
