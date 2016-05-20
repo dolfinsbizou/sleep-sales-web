@@ -7,15 +7,14 @@
  */
 namespace App\Db;
 use Astaroth\DbClass;
-class UserDb extends DbClass
+class TypeDb extends DbClass
 {
     protected function base()
     {
-        $this->setTableName('users');
+        $this->setTableName('type');
         $this->add('ID', 'int', 0);
-        $this->add('Identifiant', 'string', null);
-        $this->add('Mdp', 'string', null);
-		$this->add('Admin', 'boolean', false);
+        $this->add('typeEtape', 'string', null);
+		
         $this->setPrimaryKey('ID');
     }
 }
