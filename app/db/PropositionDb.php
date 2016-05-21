@@ -16,6 +16,7 @@ class PropositionDb extends DbClass
         $this->add('Date', 'datetime', null);
         $this->add('Descriptif', 'string', null);
 		$this->add('NbVote', 'int', 0);
+		$this->add('ID_Soiree', 'int', 0);
 	
         $this->setPrimaryKey('ID');
     }
